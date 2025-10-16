@@ -57,7 +57,15 @@ function sumNumbers(numbers) {
 // Iteration 4 | Numbers Average
 const numbers2 = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+function averageNumbers(numbers) {
+    if(numbers.length === 0) {
+        return 0;
+    } else {
+        const total = sumNumbers(numbers);
+        const avg = total/numbers.length;
+        return avg;
+    }
+}
 
 
 
